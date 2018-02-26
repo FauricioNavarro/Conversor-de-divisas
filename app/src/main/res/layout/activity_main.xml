@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fauricio.convertidor_divisas.MainActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        >
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rdbtn_colones"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@drawable/crc_flag"/>
+
+        <TextView
+            android:text="@string/Colones"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@drawable/usa_flag" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rdbtn_dolares"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@drawable/usa_flag"/>
+
+        <TextView
+            android:text="@string/Dolares"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@drawable/crc_flag" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/valor"
+        android:hint="@string/edit_text"
+        android:textStyle="italic"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/texto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40dp"
+        android:textStyle="italic"/>
+
+
+
+</LinearLayout>
