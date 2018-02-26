@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity{
     private RadioButton rdbtn_colones,rdbtn_dolares;
     private EditText editText;
     public static final String url = "https://openexchangerates.org/api/latest.json?app_id=6de8f1ac1d0341fb87e7058f7fcddb47";
+    public static final String signoColon = "₡ ";
+    public static final String signoDolar = "$ ";
     public static String TIPO_CAMBIO;
 
 
@@ -63,7 +65,7 @@ public class MainActivity extends AppCompatActivity{
                     if(estado){
                         double resultado = Double.parseDouble(valor) * (1/cambio);
                         String m = String.format("%.4f",resultado);
-                        mTxtDisplay.setText(m);
+                        mTxtDisplay.setText(signoDolar+m);
                         rdbtn_dolares.setChecked(false);
                     }
                 }break;
@@ -71,7 +73,7 @@ public class MainActivity extends AppCompatActivity{
                     if(estado){
                         double resultado = Double.parseDouble(valor) * cambio;
                         String m = String.format("%.4f",resultado);
-                        mTxtDisplay.setText(m);
+                        mTxtDisplay.setText(signoColon+m);
                         rdbtn_colones.setChecked(false);
                     }
                 }break;

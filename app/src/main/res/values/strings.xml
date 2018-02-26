@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Convertidor_divisas</string>
-    <string name="btn_name">Convertir</string>
-    <string name="edit_text">Ingrese un número</string>
-    <string name="Colones">Colones(CRC/₡) -> Dolares(USA/$)</string>
-    <string name="Dolares">Dolares(USA/$) -> Colones(CRC/₡)</string>
+    <string name="app_name">Conversor de divisas</string>
+    <string name="edit_text">Monto a convertir</string>
+    <string name="Colones">Colones(CRC-₡) -> Dolares(USA-$)</string>
+    <string name="Dolares">Dolares(USA-$) -> Colones(CRC-₡)</string>
+    <string name="encabezado">Resultado de la conversión:</string>
 </resources>
