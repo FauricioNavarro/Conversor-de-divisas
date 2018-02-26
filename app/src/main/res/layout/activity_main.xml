@@ -4,106 +4,113 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="com.example.fauricio.convertidor_divisas.MainActivity">
 
-    <Space
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="40dp" />
+        android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:orientation="horizontal"
-        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <Space
-            android:layout_width="12dp"
-            android:layout_height="wrap_content" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
 
-        <RadioButton
-            android:id="@+id/rdbtn_colones"
-            android:layout_width="40dp"
-            android:layout_height="60dp"
-            android:onClick="onRadioButtonClicked"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:src="@drawable/crc_flag"/>
+                <Space
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content" />
 
-        <TextView
-            android:text="@string/Colones"
-            android:layout_width="120dp"
-            android:layout_height="40dp" />
+                <RadioButton
+                    android:id="@+id/rdbtn_colones"
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:onClick="onRadioButtonClicked"/>
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:src="@drawable/usa_flag" />
-    </LinearLayout>
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/crc_flag"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:orientation="horizontal">
+                <TextView
+                    android:text="@string/Colones"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp" />
 
-        <Space
-            android:layout_width="12dp"
-            android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/usa_flag" />
+            </LinearLayout>
 
-        <RadioButton
-            android:id="@+id/rdbtn_dolares"
-            android:layout_width="40dp"
-            android:layout_height="60dp"
-            android:onClick="onRadioButtonClicked"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:src="@drawable/usa_flag"/>
+                <Space
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content" />
 
-        <TextView
-            android:text="@string/Dolares"
-            android:layout_width="120dp"
-            android:layout_height="40dp" />
+                <RadioButton
+                    android:id="@+id/rdbtn_dolares"
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:onClick="onRadioButtonClicked"/>
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:src="@drawable/crc_flag" />
-    </LinearLayout>
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/usa_flag"/>
 
-    <EditText
-        android:id="@+id/valor"
-        android:hint="@string/edit_text"
-        android:textStyle="italic"
-        android:textAlignment="center"
-        android:inputType="number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+                <TextView
+                    android:text="@string/Dolares"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="40dp" />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/crc_flag" />
+            </LinearLayout>
 
-    <TextView
-        android:id="@+id/texto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textSize="20dp"
-        android:textStyle="italic"
-        android:text="@string/encabezado"/>
+            <EditText
+                android:id="@+id/valor"
+                android:hint="@string/edit_text"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/texto1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textSize="40dp"
-        android:textStyle="italic"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
 
+            <TextView
+                android:id="@+id/texto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:text="@string/encabezado"/>
 
+            <TextView
+                android:id="@+id/texto1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textStyle="italic"/>
 
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
